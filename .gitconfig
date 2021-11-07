@@ -1,0 +1,9 @@
+[alias]
+  lg = log --all --decorate --oneline --graph
+  branch-name = rev-parse --abbrev-ref HEAD
+  publish = "!git push --set-upstream origin $(git branch-name)"
+  cm = "!f() { git commit -m \"$(git branch-name): $1\" }; f"
+
+[user]
+  name = 
+  email = 
